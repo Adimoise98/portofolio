@@ -16,7 +16,7 @@ import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "Aspiring Junior Front-End Developer with a passion for crafting intuitive and efficient web applications. Proficient in modern technologies such as ReactJS and TypeScript, honed through rigorous coursework and hands-on projects. Enthusiastic about problem-solving and committed to continuous learning within a collaborative and dynamic environment.s",
+    "Aspiring Junior Front-End Developer with a passion for crafting intuitive and efficient web applications. Proficient in modern technologies such as ReactJS and TypeScript, honed through rigorous coursework and hands-on projects. Enthusiastic about problem-solving and committed to continuous learning within a collaborative and dynamic environment.",
   info: [
     {
       fieldName: "Name",
