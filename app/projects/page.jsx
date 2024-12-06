@@ -24,8 +24,30 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "fullstack",
-    title: "Tutor Website (Landing page)",
+    category: "frontend",
+    title: "SnugBug Ecommerce Frontend",
+    description:
+      "SnuBug is a frontend e-commerce application designed for selling unique hoodies. Built using React and styled with TailwindCSS, to provide users with an intuitive and enjoyable shopping experience. By leveraging React's component-based architecture and TailwindCSS's utility-first styling, the application combines efficiency with creativity. This project reflects my dedication to creating modern, user-friendly web interfaces tailored to e-commerce needs.",
+    stack: [{ name: "ReactJS" }, { name: "TailwindCss" }, { name: "NodeJS" }],
+    image: "/assets/projects/thumb4.png",
+    live: "https://snugbughoodies.netlify.app/",
+    github: "https://github.com/Adimoise98/snugbug-project",
+  },
+  {
+    num: "02",
+    category: "frontend",
+    title: "This Very Website :)",
+    description:
+      "This is my first-ever project built with Next.js and TailwindCSS, marking an exciting milestone in my development journey. The website serves as a platform to present my skills, experience, and projects to future employers in a professional and visually engaging manner. Throughout this project, I explored the powerful features of Next.js, such as server-side rendering and routing, alongside the versatility of TailwindCSS for crafting responsive and modern designs. ",
+    stack: [{ name: "NextJS" }, { name: "TailwindCss" }, { name: "NodeJS" }],
+    image: "/assets/projects/thumb3.png",
+    live: "https://portofolio-brown-rho.vercel.app/",
+    github: "https://github.com/Adimoise98/portofolio-website",
+  },
+  {
+    num: "03",
+    category: "frontend",
+    title: "Tutor Landing page",
     description:
       "I was able to pull out my first honds-on project with the help of a course on Udemy for HTML&CSS. Even though the idea itself was not original, I managed to understand deep concepts on using these two tools, together with a little bit of JavaScript for the Navigation Bar to fade while scrolling and adding a Hamburger Menu.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
@@ -34,9 +56,9 @@ const projects = [
     github: "https://github.com/Adimoise98/tutor-project",
   },
   {
-    num: "02",
+    num: "04",
     category: "frontend",
-    title: "Leno Website (Landing page)",
+    title: "Leno Landing page",
     description:
       "Same as with the Tutor Website project, this was done throughout the same course on Udemy. What is interesting about this one is the usage of BEM (Block Element Modifier) for organizing the classes within the HTML so than it is easier (for me personally) to use CSS for styling. JavaScript was used also for Navbar. And one more nice feature is the Play button which is pulsating and it is done using pure CSS with ::before, ::after and @keyframes.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
@@ -65,7 +87,7 @@ const Work = () => {
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
-      <div className="container mx-auto">
+      <div className="w-full px-12 py-12 mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
@@ -75,7 +97,7 @@ const Work = () => {
               </div>
               {/* project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title}
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
@@ -152,7 +174,7 @@ const Work = () => {
               })}
               {/* slider buttons */}
               <WorkSliderBtns
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                containerStyles="flex gap-8 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
             </Swiper>
